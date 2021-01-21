@@ -26,6 +26,10 @@ button {
     background: transparent;
 }
 
+.hover {
+    color: rgb(51, 51, 51);
+}
+
 .hover:hover {
     cursor: pointer;
     background: rgb(251, 251, 251);
@@ -35,5 +39,9 @@ button {
 
 .hover.fill:hover {
     background: rgb(0, 102, 0);
+    color: rgb(251, 251, 251);
+}
+
+.button.fill.hover {
     color: rgb(251, 251, 251);
 }
