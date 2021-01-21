@@ -1,4 +1,16 @@
 @import url(https://use.fontawesome.com/releases/v5.15.2/css/all.css);
+html {
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    padding: 100px;
+}
+
+.icons {
+    margin-bottom: 30px;
+}
+
 li {
     list-style: none;
 }
