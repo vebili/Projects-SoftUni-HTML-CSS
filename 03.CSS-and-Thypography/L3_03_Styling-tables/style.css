@@ -19,7 +19,6 @@ td {
     padding: 7px;
 }
 
-tr:nth-child(odd),
 tr:nth-child(odd) td {
     background: rgb(241, 241, 241);
 }
