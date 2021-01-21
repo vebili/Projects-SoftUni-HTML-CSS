@@ -1,0 +1,37 @@
+html {
+    font-family: 'Helvetica', sans-serif;
+}
+
+table {
+    margin: 100px;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 7px;
+    background: #cccccc;
+    border-width: 1px;
+}
+
+td {
+    min-width: 200px;
+    padding: 7px;
+}
+
+tr:nth-child(odd),
+tr:nth-child(odd) td {
+    background: rgb(241, 241, 241);
+}
+
+table,
+td,
+tr {
+    border: 1px solid rgb(221, 221, 221);
+}
+
+tr:hover,
+tr:hover td {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
