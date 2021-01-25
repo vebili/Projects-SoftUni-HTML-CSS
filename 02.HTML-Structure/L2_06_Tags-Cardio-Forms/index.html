@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Customer Details</legend>
+            <div>
+                <label>First Name</label> <input type="text" placeholder="George" autofocus="true">
+            </div>
+            <div>
+                <label>Last Name</label> <input type="text" placeholder="Devis">
+            </div>
+            <div>
+                <label>Male</label> <input type="radio"> <label>Female</label> <input type="radio"> <label>Other</label> <input type="radio">
+            </div>
+            <div>
+                <label>Preferred contact method:</label> Email <input type="radio"> Phone <input type="radio">
+            </div>
+            <div>
+                <label>Email</label> <input type="email" placeholder="your@email.com">
+            </div>
+            <div>
+                <label>Phone</label> <input type="tel" placeholder="+359885236225">
+            </div>
+            <div>
+                <label>Town</label>
+                <select>
+                    <option>Varna</option>
+                    <option>Plovdiv</option>
+                    <option>Burgas</option>
+                    <option>Sofia</option>
+                    <option>Pleven</option>
+                </select>
+            </div>
+            <div>
+                <label>Age</label> <input type="number" min="18" max="70">
+            </div>
+            <div>
+                <label>Programming language in</label> <input list="lang">
+                <datalist id="lang">
+                    <option>Java</option>
+                    <option>PHP</option>
+                    <option>C#</option>
+                    <option>JavaScript</option>
+                    <option>Python</option>
+                    <option>Ruby</option>
+                    <option>Other</option>
+                </datalist>
+            </div>
+            <div>
+                <textarea rows="5" cols="20" placeholder="More information...">
+                </textarea>
+            </div>
+            <div>
+                <input type="checkbox" checked="true"> <label>I agree the Terms and Conditions</label>
+            </div>
+            <div>
+                <input type="submit" value="Send">
+            </div>
+        </fieldset>
+
+    </form>
+</body>
+
+</html>
