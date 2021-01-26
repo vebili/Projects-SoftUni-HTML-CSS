@@ -1,0 +1,88 @@
+/* @import url(https://use.fontawesome.com/releases/v5.15.2/css/all.css);
+body {
+    padding: 50px;
+}
+
+p {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.green {
+    background-color: #008000;
+}
+
+.orange {
+    background-color: #FF8C00;
+} */
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    padding: 7px;
+    background: #cccccc;
+    border-width: 1px;
+}
+
+td {
+    min-width: 200px;
+    padding: 7px;
+}
+
+tr:nth-child(odd) td {
+    background: rgb(241, 241, 241);
+}
+
+table,
+td,
+tr {
+    border: 1px solid rgb(221, 221, 221);
+}
+
+tr:hover td {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+blockquote {
+    border-left: 3px solid rgb(221, 221, 221);
+    font-style: italic;
+}
+
+blockquote p {
+    padding-left: 30px;
+    line-height: 2;
+    font-weight: bold;
+}
+
+.sign {
+    text-align: right;
+}
