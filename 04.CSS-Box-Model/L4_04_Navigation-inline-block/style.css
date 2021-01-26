@@ -1,0 +1,18 @@
+html {
+    padding: 50px 100px;
+    font-family: Helvetica, sans-serif;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav {
+    display: inline-block;
+}
