@@ -12,3 +12,15 @@ body {
 img {
     width: 600px;
 }
+
+aside {
+    vertical-align: top;
+    display: inline-block;
+    width: 25%;
+}
+
+article {
+    margin: 10px 50px;
+    width: 60%;
+    display: inline-block;
+}
