@@ -1,0 +1,61 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #ccc;
+    align-items: stretch;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+}
+
+header,
+main,
+aside,
+footer {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    align-self: stretch;
+    text-transform: uppercase;
+}
+
+header {
+    flex: 1 1 80vw;
+    max-height: 20vh;
+}
+
+main {
+    flex: 1 1 60vw;
+    margin: 20px 20px 20px 0;
+    min-height: 45vh
+}
+
+aside {
+    flex: 1 1 20vw;
+    margin: 20px 0;
+}
+
+footer {
+    flex: 1 0 80vw;
+    max-height: 10vh;
+}
