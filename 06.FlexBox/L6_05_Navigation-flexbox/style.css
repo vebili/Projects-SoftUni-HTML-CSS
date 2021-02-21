@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    padding: 50px;
+}
+
+body>header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+header ul {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1;
+    list-style: none;
+}
+
+header nav {
+    display: flex;
+    align-self: center;
+}
+
+body>header h1 {
+    text-transform: uppercase;
+}
+
+header li {
+    margin-left: 10px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}

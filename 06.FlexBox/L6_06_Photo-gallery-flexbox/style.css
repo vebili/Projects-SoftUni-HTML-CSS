@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+ul,
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    list-style: none;
+}
+
+li {
+    border: 10px solid black;
+    box-shadow: inset 0 0 10px black;
+    background-color: white;
+    align-self: stretch;
+    padding: 20px 10px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+}
+
+.gallery {
+    max-width: 80%;
+}
+
+.gallery ul {
+    justify-content: space-between;
+}
