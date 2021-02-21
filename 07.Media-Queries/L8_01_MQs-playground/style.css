@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 10px;
+    padding: 0;
+}
+
+@media (min-width: 600px) {
+    .mq-width::after {
+        content: "Viewport width is larger than 600px";
+        display: inline-block;
+        margin-left: 5px;
+        color: green;
+        font-weight: bold;
+    }
+}
+
+@media (min-height: 600px) {
+    .mq-height::after {
+        content: "Viewport height is larger than 600px";
+        display: inline-block;
+        margin-left: 5px;
+        color: green;
+        font-weight: bold;
+    }
+}
+
+@media (min-aspect-ratio: 8/5) {
+    .mq-ar::after {
+        content: "Aspect ratio is larger than 8/5";
+        display: inline-block;
+        margin-left: 5px;
+        color: green;
+        font-weight: bold;
+    }
+}
