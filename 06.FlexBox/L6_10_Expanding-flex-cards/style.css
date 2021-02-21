@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 45vw;
+    height: 30vh;
+    flex-flow: row nowrap;
+}
+
+li {
+    display: flex;
+    flex: 0 1 10%;
+    background-color: black;
+    justify-content: center;
+    overflow: hidden;
+    margin-right: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+li:nth-child(2) {
+    flex: 1 0 25%;
+    align-self: stretch;
+}
+
+li:nth-child(2) img {
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+}
