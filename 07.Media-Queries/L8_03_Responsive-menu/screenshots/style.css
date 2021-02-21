@@ -1,0 +1,97 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-flow: column wrap;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3vh;
+    width: 80%;
+    align-self: center;
+    border-bottom: 1px solid black;
+}
+
+header>h1 {
+    text-transform: uppercase;
+}
+
+header>nav {
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+header>nav>ul {
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 5px;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (min-width: 900px) {
+    header>section {
+        display: none;
+    }
+}
+
+@media (max-width: 899px) {
+    header {
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    header>section {
+        align-self: center;
+        margin-bottom: 10px;
+    }
+    header>nav {
+        align-self: stretch;
+    }
+    header nav ul {
+        align-self: stretch;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        flex: 1;
+        border-top: 1px solid black;
+    }
+    header nav ul li {
+        align-self: stretch;
+        margin: 5px 0;
+    }
+}
