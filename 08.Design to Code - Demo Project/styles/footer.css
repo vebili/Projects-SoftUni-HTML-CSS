@@ -1,0 +1,38 @@
+footer {
+    background-color: rgb(45, 44, 58);
+    padding: 2rem 5rem;
+    display: flex;
+}
+
+footer a,
+footer p {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer section:not(:last-child) {
+    margin-right: 5em;
+}
+
+footer h6 {
+    color: rgb(159, 92, 215);
+    margin-bottom: 5px;
+}
+
+.footer-social {
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.footer-social li:not(:last-child) {
+    margin-right: 25px;
+}
+
+.footer-social i {
+    font-size: 32px;
+}

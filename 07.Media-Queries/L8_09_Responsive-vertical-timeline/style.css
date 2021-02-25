@@ -1,0 +1,117 @@
+@import "reset.css";
+@import "typography.css";
+
+section.timeline {
+    position: relative;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    border: 0.3rem solid rgb(153, 153, 153);
+    margin: 3rem;
+}
+
+section.timeline::after {
+    content: "";
+    position: absolute;
+    width: 0.4rem;
+    background-color: rgb(153, 153, 153);
+    top: 6.3rem;
+    bottom: 0;
+    left: 50%;
+    margin-left: -0.2rem;
+}
+
+section.timeline > header {
+    padding: 0.3rem 1rem;
+    width: 20rem;
+    border: 0.1em solid rgb(153, 153, 153);
+    border-radius: 0.2em;
+    margin: 1rem auto 0;
+}
+
+section.timeline > article {
+    position: relative;
+    width: 50%;
+    padding: 0 2rem;
+}
+
+section.timeline > article:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+section.timeline > article:nth-child(even) {
+    left: 50%;
+}
+
+section.timeline > article:nth-child(even)::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1rem;
+    left: -0.75rem;
+    background-color: green;
+    border: 0.2rem solid rgb(153, 153, 153);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+section.timeline > article:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: 1rem;
+    right: -0.75rem;
+    background-color: orange;
+    border: 0.2rem solid rgb(153, 153, 153);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    section.timeline::after {
+        left: 10%;
+    }
+
+    section.timeline > header {
+        margin-left: 4%;
+    }
+
+    section.timeline > article {
+        width: 90%;
+    }
+
+    section.timeline > article h3 {
+        padding-top: 1em;
+    }
+
+    section.timeline > article:nth-child(odd) {
+        left: 10%;
+        text-align: left;
+    }
+
+    section.timeline > article:nth-child(even) {
+        left: 10%;
+    }
+
+    section.timeline > article:nth-child(even)::before {
+        top: 2.8rem;
+        left: -1.52rem;
+    }
+
+    section.timeline > article:nth-child(odd)::after {
+        top: 2.8rem;
+        left: -1.52rem;
+    }
+}
+
+@media (max-width: 350px) {
+    section.timeline > header {
+        width: auto;
+    }
+}
+
+
+
+

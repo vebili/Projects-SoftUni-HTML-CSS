@@ -1,0 +1,135 @@
+main {
+    position: relative;
+    overflow: hidden;
+}
+
+.main-diplomas {
+    padding: 2rem 8rem 2rem 5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.main-diplomas-content {
+    flex: 0 0 65%;
+}
+
+.main-award-wrapper {
+    display: inline-block;
+    background: rgb(84, 84, 109);
+    position: absolute;
+    top: -230px;
+    right: -10px;
+    min-width: 464px;
+    min-height: 464px;
+    padding: 255px 0 0 315px;
+    text-align: right;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.main-award-wrapper img {
+    display: block;
+    position: relative;
+    max-width: 150px;
+    height: 221px;
+    top: -80px;
+    right: 125px;
+}
+
+.main-diplomas-content-small {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.6);
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.main-diplomas-images {
+    margin-left: 50px;
+    flex: 0 0 25%;
+}
+
+.main-diplomas-images img {
+    width: 110%;
+}
+
+.main-certificates {
+    padding: 2rem 5rem;
+    background-color: rgb(20, 22, 43);
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.main-certificates-content {
+    flex: 0 0 60%;
+    margin-right: 4em;
+}
+
+.main-certificates-content-heading {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.main-certificates-content-text {
+    font-size: 14px;
+}
+
+.main-certificates-images {
+    flex: 0 0 30%;
+    position: relative;
+    bottom: -80px;
+    left: 40px;
+}
+
+.main-certificates-images img {
+    background: transparent;
+}
+
+.main-career {
+    padding: 3rem 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-career-image {
+    flex: 0 0 25%;
+    overflow: hidden;
+    margin-right: 3em;
+}
+
+.main-career-image img {
+    display: block;
+    width: 100%;
+}
+
+.main-career-text {
+    align-self: stretch;
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main-diplomas-content-heading,
+.main-career-text-heading {
+    font-size: 24px;
+    color: rgb(94, 84, 109);
+    margin-bottom: 0.8em;
+}
+
+.main-diplomas-content-normal,
+.main-career-text-content {
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 2em;
+}
+
+.btn-empty {
+    background-color: transparent;
+    border: 1px solid rgb(159, 92, 215);
+    color: rgb(159, 92, 215);
+    padding: 8px 20px;
+}
