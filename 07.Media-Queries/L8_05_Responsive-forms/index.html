@@ -5,11 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Forms</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-
+    <section class="content">
+        <fieldset class="login-container">
+            <legend>Login</legend>
+            <form>
+                <p>
+                    <label for="username">Username</label>
+                    <span>
+                        <input type="text" id="username" name="username">
+                        <i class="fas fa-user"></i>
+                    </span>
+                </p>
+                <p>
+                    <label for="password">Password</label>
+                    <span>
+                        <input type="password" id="password" name="password">
+                        <i class="fas fa-key"></i>
+                    </span>
+                </p>
+                <input class="btn" type="submit" value="Login">
+            </form>
+        </fieldset>
+    </section>
 </body>
 
 </html>
