@@ -1,0 +1,37 @@
+.nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.nav-toggle:checked+.site-header>nav>ul {
+    display: flex;
+}
+
+.nav-toggle:not(:checked)+.site-header>nav>ul {
+    display: none;
+}
+
+.nav-toggle:checked+.site-header>nav>.nav-toggle-label::before {
+    content: "X";
+    margin-right: 0.25em;
+}
+
+.nav-toggle-label {
+    border-bottom: 2px solid rgb(0, 0, 0);
+    display: block;
+    font-weight: bold;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .nav-toggle,
+    .nav-toggle-label {
+        display: none;
+    }
+    .nav-toggle:not(:checked)+.site-header>nav>ul {
+        display: flex;
+    }
+}
