@@ -1,0 +1,194 @@
+section {
+    padding-bottom: 2rem;
+}
+
+.hexagons {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.06'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.diagonal-stripers {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+
+header.site-title,
+section.people-cards,
+footer.site-footer {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+section.introduction {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+header.site-title {
+    display: flex;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+footer.site-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2em;
+    box-shadow: inset 0 1em 0.8em -0.5em gray;
+}
+
+section.header-title h1 {
+    color: purple;
+}
+
+section.header-title p {
+    text-transform: uppercase;
+}
+
+section.introduction {
+    display: flex;
+}
+
+section.introduction>div:last-child {
+    width: 25em;
+    height: auto;
+    margin: 2em 2em 0;
+}
+
+section.newsletter {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-color: purple;
+    padding: 0.5em 0 3em;
+    box-shadow: 0 -0.5em 1em 0 purple;
+}
+
+section.newsletter header {
+    margin-bottom: 3em;
+}
+
+section.newsletter h2 {
+    color: white;
+}
+
+section.newsletter form {
+    width: 30em;
+    margin: 0 auto;
+}
+
+section.newsletter form fieldset {
+    border: none;
+}
+
+footer.site-footer section {
+    flex: 0 0 28%;
+}
+
+footer.site-footer h1 a {
+    color: black;
+    text-decoration: none;
+}
+
+footer.site-footer section.sitemap ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer.site-footer section.sitemap ul li {
+    list-style: none;
+    flex-basis: 50%;
+}
+
+footer.site-footer section.sitemap ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer.site-footer section.contacts ul li {
+    list-style: none;
+}
+
+footer.site-footer section.contacts ul li i {
+    margin-right: 1em;
+}
+
+footer.site-footer section.contacts ul li span {
+    margin-right: 2em;
+}
+
+footer.site-footer a:hover {
+    color: purple;
+}
+
+footer.site-footer section.sitemap ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 950px) {
+    footer.site-footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .introduction>div:last-child img {
+        width: 10em;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    section.newsletter form {
+        width: 25em;
+    }
+    section.newsletter form input {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 300px) {
+    section.newsletter form {
+        width: 10em;
+    }
+    section.newsletter form input[type="email"] {
+        width: 100%;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1316px) {
+    footer.site-footer {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 900px) {
+    header.site-title,
+    footer.site-footer {
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    section.people-cards {
+        padding-right: 2em;
+        padding-left: 2em;
+    }
+    section.introduction {
+        padding-right: 5em;
+        padding-left: 7em;
+    }
+}
+
+@media (min-width: 1200px) {
+    header.site-title,
+    section.people-cards,
+    footer.site-footer {
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+    section.introduction {
+        padding-right: 10em;
+        padding-left: 7em;
+    }
+}

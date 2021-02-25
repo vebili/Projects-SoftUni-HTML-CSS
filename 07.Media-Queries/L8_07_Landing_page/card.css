@@ -1,0 +1,42 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.card {
+    display: flex;
+    flex: 0 1 30%;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5em;
+}
+
+.name,
+.description {
+    font-weight: bold;
+}
+
+.description,
+.comment {
+    font-style: italic;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card img {
+    width: 10em;
+    height: 10em;
+    border: 0.5em solid rgba(219, 219, 219, 0.7);
+    border-radius: 50%;
+    box-shadow: 0 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 900px) {
+    .card {
+        flex-basis: 45%;
+    }
+}

@@ -1,0 +1,94 @@
+header.site-title nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+header.site-title nav ul {
+    padding: 0.8em;
+    border-radius: 0.3em;
+}
+
+header.site-title nav ul li {
+    list-style: none outside;
+    display: inline-block;
+    margin-right: 0.5em;
+}
+
+header.site-title nav ul li a {
+    color: black;
+    text-decoration: none;
+    line-height: 1;
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+
+header.site-title nav ul li a:focus,
+header.site-title nav ul li a:hover {
+    color: white;
+    background-color: rgb(76, 99, 122);
+}
+
+.nav-togle,
+.nav-togle-button {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    header.site-title {
+        display: flex;
+        justify-content: space-between;
+    }
+    header.site-title nav {
+        display: none;
+    }
+    .nav-togle-button {
+        display: block;
+    }
+    .nav-togle-button {
+        display: flex;
+        justify-content: center;
+        padding: 3em 0 0.5em 0;
+        font-size: 1.3em;
+    }
+    .nav-togle-button .close {
+        display: none;
+    }
+    .nav-togle:checked+header.site-title .nav-togle-button .close {
+        display: flex;
+        margin-left: auto;
+    }
+    .nav-togle:checked+header.site-title .nav-togle-button .open {
+        display: none;
+    }
+    .nav-togle:checked+header.site-title {
+        display: block;
+    }
+    .nav-togle:checked+header.site-title nav {
+        display: flex;
+        border-top: 0.15em solid black;
+        border-bottom: 0.15em solid black;
+    }
+    .nav-togle:checked+header.site-title nav ul {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 100%;
+    }
+    .nav-togle:checked+header.site-title nav ul li {
+        padding-bottom: 0.5em;
+    }
+    .nav-togle:checked+header.site-title nav ul li a {
+        color: white;
+        background-color: black;
+        display: flex;
+        padding: 1em;
+    }
+    .nav-togle:checked+header.site-title nav ul li:last-child {
+        padding-bottom: 0;
+    }
+    .nav-togle:checked+header.site-title nav ul li a:focus,
+    .nav-togle:checked+header.site-title nav ul li a:hover {
+        color: white;
+        background-color: rgb(76, 99, 122);
+    }
+}
