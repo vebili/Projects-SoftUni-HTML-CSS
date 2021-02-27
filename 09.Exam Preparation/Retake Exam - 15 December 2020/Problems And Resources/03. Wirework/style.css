@@ -1,0 +1,304 @@
+@import 'https://use.fontawesome.com/releases/v5.15.2/css/all.css';
+html {
+    height: 100%;
+}
+
+body {
+    width: 80%;
+    margin: 40px auto;
+    padding: 0px;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #6c6c6c;
+    min-height: 100%;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #454445;
+}
+
+p,
+ol,
+ul {
+    margin-top: 0;
+}
+
+ol,
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    line-height: 180%;
+}
+
+a {
+    color: #2C383B;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    margin: 0px auto;
+    width: 1200px;
+}
+
+.button {
+    display: inline-block;
+    padding: 1.3em 3em;
+    background: #1B9772;
+    letter-spacing: 0.20em;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #FFF;
+}
+
+.title {
+    margin-bottom: 3em;
+}
+
+.title h2 {
+    font-weight: 400;
+    font-size: 2.8em;
+    color: #323232;
+}
+
+#header-wrapper {
+    background: #FFF;
+}
+
+#header {
+    position: relative;
+    height: 100px;
+}
+
+#logo {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+}
+
+#logo h1 {
+    display: inline-block;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #2C383B;
+    padding-right: 0.50em;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+    margin-right: 0.40em;
+}
+
+#logo span {
+    position: absolute;
+    top: 1.4em;
+    display: inline-block;
+    padding-left: 1.50em;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    font-size: 0.90em;
+}
+
+#logo a {
+    text-decoration: none;
+    color: #2C383B;
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    top: 1em;
+}
+
+#menu ul {
+    display: inline-block;
+}
+
+#menu li {
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+}
+
+#menu li a,
+#menu li span {
+    display: inline-block;
+    margin-left: 1px;
+    padding: 0em 1.5em;
+    letter-spacing: 0.10em;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    outline: 0;
+    color: #212121;
+    background: #ECECEC;
+}
+
+#menu .current_page_item a {
+    background: #E24E2A;
+    color: #FFF;
+}
+
+#banner-wrapper {
+    overflow: hidden;
+    padding: 3em 0em;
+    background: #E24E2A;
+}
+
+#banner {
+    overflow: hidden;
+    width: 1000px;
+    padding: 0px 100px;
+    text-align: center;
+    color: rgba(255, 255, 255, .7);
+}
+
+#banner a {
+    color: rgba(255, 255, 255, .9);
+}
+
+#wrapper {
+    background: #FFF;
+}
+
+#copyright {
+    overflow: hidden;
+    padding: 5em 0em;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+#copyright p {
+    letter-spacing: 0.20em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.80em;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+#copyright a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#featured-wrapper {
+    overflow: hidden;
+    padding: 6em 0em;
+    background: #383838;
+    text-align: center;
+}
+
+#featured {
+    overflow: hidden;
+}
+
+#featured .title {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+#featured .title h2 {
+    font-size: 1.2em;
+}
+
+#featured h2 {
+    text-align: center;
+    color: #FFF;
+}
+
+#featured .icon {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: #E24E2A;
+    margin: 0px auto 20px auto;
+    line-height: 100px;
+    font-size: 3em;
+    text-align: center;
+    color: #FFF;
+}
+
+.column1,
+.column2,
+.column3,
+.column4 {
+    width: 282px;
+}
+
+.column1,
+.column2 {
+    float: left;
+    margin-right: 24px;
+}
+
+.column3 {
+    float: left;
+}
+
+.column4 {
+    float: right;
+}
+
+#header-featured {
+    height: 30em;
+    background-image: url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#footer-wrapper {
+    overflow: hidden;
+    padding: 6em 0em;
+    background: #383838;
+    text-align: center;
+}
+
+#footer {
+    overflow: hidden;
+}
+
+#footer .title h2 {
+    font-size: 1.6em;
+    font-weight: 300;
+    color: #FFF;
+}
+
+#extra {
+    overflow: hidden;
+    margin: 0em auto 0em auto;
+    padding: 5em 0em 5em 0em;
+    text-align: center;
+}
+
+#extra h2 {
+    margin: 0em;
+    padding: 0em;
+    font-weight: 400;
+    font-size: 2.4em;
+    color: #555555;
+}
+
+#extra span {
+    display: block;
+    padding-top: 0.20em;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #A2A2A2;
+}
+
+#extra .button {
+    margin-top: 2em;
+}

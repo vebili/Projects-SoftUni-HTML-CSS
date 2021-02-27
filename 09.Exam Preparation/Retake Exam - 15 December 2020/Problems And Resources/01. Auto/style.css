@@ -1,0 +1,58 @@
+@import url("reset.css");
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    width: 1200px;
+    margin: 150px auto;
+}
+
+.h1-heading {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.h3-heading {
+    font-family: 'Montserrat', sans-serif;
+    color: #6D6976;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.car-dealer-info-p {
+    color: #89898E;
+    /* font-size: 16px; */
+    line-height: 20px;
+}
+
+.car-dealer-info-wrapper {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.car-dealer-image-wrapper {
+    display: inline-block;
+    width: 40%;
+    margin-left: 68px
+}
+
+.article-info-wrapper img {
+    display: inline-block;
+    width: 60px;
+}
+
+.article-info {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.article-info h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #6D6976;
+}
+
+.article-info p {
+    margin-top: 7px;
+    color: #89898E;
+}
