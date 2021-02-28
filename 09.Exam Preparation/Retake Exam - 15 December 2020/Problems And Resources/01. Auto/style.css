@@ -14,8 +14,9 @@ body {
 
 .h3-heading {
     font-family: 'Montserrat', sans-serif;
-    color: #6D6976;
+    color: #555;
     font-size: 22px;
+    font-weight: 400;
     margin-bottom: 25px;
 }
 
@@ -49,7 +50,8 @@ body {
 
 .article-info h4 {
     font-family: 'Montserrat', sans-serif;
-    color: #6D6976;
+    color: #555;
+    font-weight: 400;
 }
 
 .article-info p {
