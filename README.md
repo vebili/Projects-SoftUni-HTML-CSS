@@ -8,4 +8,4 @@ SoftUni Solutions 2021 All lab problems and exercises from this module, includin
 04.CSS-Box-Model<br>
 05.Position-Float<br>
 06.FlexBox<br>
-<br>
+07.Media-Queries<br>
